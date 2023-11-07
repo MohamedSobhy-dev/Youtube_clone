@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Roboto","Arial",sans-serif;
+}
+
+/* header start */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    padding: 0 16px;
+}
+
+.left-sec {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.left-sec img {
+    width: 46%;
+    padding-left: 16px;
+}
+
+
+.mid-sec {
+    display: flex;
+    align-items: center;
+    margin-left: -9%;
+}
+
+.mid-sec form {
+    display: flex;
+    height: 40px; 
+    width: 628px;
+}
+
+.mid-sec input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 2px 0 0 2px ;
+    border: 1px solid #d3d3d3;
+    border-right: none;
+}
+
+.mid-sec button {
+    width: 64px;
+    cursor: pointer;
+    padding-top: 4px;
+    border-radius: 0 2px 2px 0;
+    border: 1px solid #d3d3d3;
+    background-color: #f8f8f8;
+}
+
+.mic {
+    background-color: #f9f9f9;;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mid-sec .mic:hover {
+    background-color: #f0f0f0;
+}
+
+.mid-sec button:hover {
+    background-color: #f0f0f0;
+    border: 1px solid #c6c6c6;
+
+}
+
+.right-sec a {
+    text-decoration: none;
+    padding-right: 16px;
+}
+/* header end */
+
+
+/* aside start */
+.content-area {
+    display: flex;
+    height: calc(100vh - 56px);
+    background-color: #f9f9f9;
+}
+
+aside {
+    height: 100%;
+    width:280px;
+    overflow-y: auto;
+    background-color:white;
+}
+
+aside nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    padding-right: 15px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    padding: 10px 16px;
+}
+
+.nav-link span {
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #100f0f;
+    margin-left: 24px;
+    line-height: 2em;
+}
+
+.active {
+    background-color: #e5e5e5;
+}
+
+.active-span {
+    font-weight: 500;
+}
+
+hr {
+    margin: 10px  0;
+    height: 1px;
+    background-color: #e5e5e5;
+    border: none;
+} 
+
+.nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+nav p {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #606060;
+    padding: 10px 16px;
+    text-transform: uppercase;
+}
+
+.chanal-img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid #e5e5e5;
+}
+/* aside end */
+
+/* start main section */
+main {
+    width: 100%;
+    height: 100%;
+    padding: 15px 16px;
+    border-top: 1px solid #ddd;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+.video {
+    width: 290px;
+    height: 250px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    /* background-color: #d3d3d3; */
+    display: flex;
+    flex-direction: column;
+    margin: 10px 16px 16px 5px;
+    border-radius: 2px;
+}
+
+.thumbnail img {
+    border-radius: 2px;
+
+    width: 100%;
+    height: 170px;
+}
+
+.video-details {
+    display: flex;
+    align-items:center ;
+}
+
+.creator-img {
+    margin:15px 15px 15px 1px;
+}
+
+.creator-img img {
+    width:35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    line-height: 2rem;
+}
+
+.video-title {
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+    max-width: 250px;
+    overflow: hidden;
+    /* display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 1;
+    -webkit-box-orient: vertical; */
+}
+
+.video-creator {
+    font-weight: 500;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.4rem;
+}
+.video-creator:hover {
+    color: black;
+}
+/* end main section */
+
+
